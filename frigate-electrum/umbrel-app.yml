@@ -1,0 +1,40 @@
+manifestVersion: 1.1
+id: frigate-electrum
+category: bitcoin
+name: Frigate
+version: "1.5.3"
+tagline: Silent Payments Electrum Server
+description: >-
+  Frigate is an Electrum server for Silent Payments (BIP352). It indexes your
+  Bitcoin blockchain for Silent Payments transactions, enabling Sparrow Wallet
+  (2.5.0+) to send and receive payments to Silent Payment addresses — a privacy
+  protocol that lets you publish one static address while every on-chain payment
+  lands at a unique, unlinkable address.
+
+
+  Frigate sits in front of your existing Electrs installation: it handles Silent
+  Payments scanning natively and proxies all other Electrum queries to Electrs,
+  so your existing P2WPKH and other wallets continue working without any changes.
+
+
+  After installing, update Sparrow's server port from 50001 to 50003.
+releaseNotes: >-
+  Initial release of Frigate for Umbrel. Requires Electrs to be installed.
+  Supports both Bitcoin Core and Bitcoin Knots.
+developer: Sparrow Wallet
+website: https://sparrowwallet.com
+dependencies:
+  - electrs
+repo: https://github.com/sparrowwallet/frigate
+support: https://github.com/sparrowwallet/frigate/issues
+port: 2104
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultPassword: ""
+submitter: sparrowwallet
+submission: ""
+backupIgnore:
+  - data/frigate/db
