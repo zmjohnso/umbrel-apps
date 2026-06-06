@@ -1,0 +1,85 @@
+manifestVersion: 1.1
+id: bitcoin-commons
+implements:
+  - bitcoin
+category: bitcoin
+name: Bitcoin Commons
+version: "0.1.34"
+tagline: Run your personal Bitcoin node powered by BLVM
+description: >-
+  Bitcoin Commons is a full Bitcoin node powered by BLVM — the Bitcoin Low-Level
+  Virtual Machine from BTCDecoded. It independently stores and validates every
+  Bitcoin transaction without trusting any third party.
+
+
+  Connect your wallet directly to your own node for unmatched privacy. Compatible
+  with all Umbrel apps that depend on a Bitcoin node (Electrs, Mempool, Lightning,
+  and more).
+
+
+  BLVM is a from-scratch Bitcoin consensus implementation with a modular plugin
+  architecture, formal spec verification, and support for mainnet, testnet, and
+  signet networks.
+developer: BTCDecoded
+website: https://btcdecoded.org
+dependencies: []
+repo: https://github.com/BTCDecoded/blvm
+support: https://github.com/BTCDecoded/blvm/issues
+port: 2119
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultPassword: ""
+releaseNotes: >-
+  Initial release of Bitcoin Commons on Umbrel, powered by BLVM v0.1.34.
+widgets:
+  - id: "stats"
+    type: "four-stats"
+    refresh: "5s"
+    endpoint: "app:3000/api/widget/stats"
+    link: ""
+    example:
+      type: "four-stats"
+      link: ""
+      items:
+        - title: "Connections"
+          text: "11"
+          subtext: "peers"
+        - title: "Mempool"
+          text: "257"
+          subtext: "MB"
+        - title: "Hashrate"
+          text: "590"
+          subtext: "EH/s"
+        - title: "Blockchain size"
+          text: "600"
+          subtext: "GB"
+  - id: "sync"
+    type: "text-with-progress"
+    refresh: "2s"
+    endpoint: "app:3000/api/widget/sync"
+    link: ""
+    example:
+      type: "text-with-progress"
+      link: ""
+      title: "Blockchain sync"
+      text: "83%"
+      progressLabel: "In progress"
+      progress: 0.83
+backupIgnore:
+  - data/blvm/blocks
+  - data/blvm/chainstate
+  - data/blvm/indexes
+  - data/blvm/testnet3/blocks
+  - data/blvm/testnet3/chainstate
+  - data/blvm/testnet3/indexes
+  - data/blvm/signet/blocks
+  - data/blvm/signet/chainstate
+  - data/blvm/signet/indexes
+  - data/blvm/regtest/blocks
+  - data/blvm/regtest/chainstate
+  - data/blvm/regtest/indexes
+submitter: BTCDecoded
+submission: https://github.com/getumbrel/umbrel-apps/pull/PENDING

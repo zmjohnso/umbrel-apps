@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Main orange background circle -->
+  <circle cx="128" cy="128" r="128" fill="#f7931a"/>
+
+  <!-- Subtle outer ring for "commons/community" feel -->
+  <circle cx="128" cy="128" r="112" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="6"/>
+
+  <!-- Bitcoin B symbol (standard shape, slightly tilted 12°) -->
+  <!-- Constructed from paths to match the canonical Bitcoin logo shape -->
+  <g transform="translate(128,128) rotate(12)">
+    <!-- Vertical left bar -->
+    <rect x="-28" y="-56" width="18" height="112" rx="5" fill="white"/>
+
+    <!-- Upper serif bar (top horizontal bar) -->
+    <rect x="-28" y="-56" width="44" height="16" rx="5" fill="white"/>
+
+    <!-- Middle bar -->
+    <rect x="-28" y="-12" width="44" height="16" rx="5" fill="white"/>
+
+    <!-- Lower serif bar (bottom horizontal bar) -->
+    <rect x="-28" y="40" width="44" height="16" rx="5" fill="white"/>
+
+    <!-- Upper bump (top half-circle) -->
+    <path d="M16,-56 Q62,-56 62,-20 Q62,16 16,4" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Lower bump (bottom half-circle, slightly wider) -->
+    <path d="M16,-12 Q70,-12 70,28 Q70,56 16,56" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Small dots in corners suggesting "network / commons" -->
+  <circle cx="42" cy="42" r="6" fill="rgba(255,255,255,0.22)"/>
+  <circle cx="214" cy="42" r="6" fill="rgba(255,255,255,0.22)"/>
+  <circle cx="42" cy="214" r="6" fill="rgba(255,255,255,0.22)"/>
+  <circle cx="214" cy="214" r="6" fill="rgba(255,255,255,0.22)"/>
+</svg>
