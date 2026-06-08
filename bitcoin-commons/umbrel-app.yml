@@ -81,5 +81,3 @@ backupIgnore:
   - data/blvm/regtest/blocks
   - data/blvm/regtest/chainstate
   - data/blvm/regtest/indexes
-submitter: BTCDecoded
-submission: https://github.com/getumbrel/umbrel-apps/pull/PENDING
