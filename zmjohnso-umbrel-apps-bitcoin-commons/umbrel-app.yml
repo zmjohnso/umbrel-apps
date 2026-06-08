@@ -1,5 +1,5 @@
 manifestVersion: 1.1
-id: bitcoin-commons
+id: zmjohnso-umbrel-apps-bitcoin-commons
 implements:
   - bitcoin
 category: bitcoin
